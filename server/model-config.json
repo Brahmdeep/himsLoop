@@ -1,0 +1,69 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Message": {
+    "dataSource": null
+  },
+  "person": {
+    "dataSource": "db",
+    "public": true
+  },
+  "ZoneMst": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "DivisionMst": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Medicalstaff": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "StationMst": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "MedicalExamCentreMst": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "MedicalStaffQbe": {
+    "dataSource": "mysql",
+    "public": true
+  }
+}
